@@ -29,32 +29,35 @@ header img {height: 30%;margin:auto}
 
 .nav-header{height: 100%;width: 50vh;display: flex;flex-direction: row;justify-content: end;flex-wrap: wrap;}
 nav li{height: 100%; list-style-type: none;  padding-left: 20px;margin-left: 30px;}
-nav a{height:100%;color: black;text-decoration: none;font-size: 0.9em;font-weight: 400;transition: 0.25s;display: flex;align-items: center;margin: auto;border-top: 3px solid transparent;}
+nav a{height:100%;color: black;text-decoration: none;font-size: 1em;font-weight: 400;transition: 0.25s;display: flex;align-items: center;margin: auto;border-top: 3px solid transparent;}
 nav li a:hover {color: #0065FC;transition: 0.25s;border-top: 3px solid #0065FC}
 nav li a p{margin:auto;}
 
 /****** Research ***********/
 .research{margin-top: 5vh;}
 
-h1{font-weight: 700;font-size: 1.2em;margin-bottom: 0.4em;}
-.research p{font-weight: 400;font-size: 0.9em;}
+h1{font-weight: 700;font-size: 1.375em;margin-bottom: 0.4em;}
+.research p{font-weight: 400;font-size: 1em;}
 
 .researchform{margin-bottom: 35px;height: 49px;display: flex;margin-top: 35px;}
 .label-location{width: 49px;height: 100%;display: flex;border: 1px solid #F2F2F2;background-color:var(--main-bg-color);border-top-left-radius:15px;border-bottom-left-radius:15px;}
 .fa-location-dot {color: black;margin: auto;}
-#city_form{height: 100%;border: none;background-color:white;border-top: 1px solid #F2F2F2;border-bottom: 1px solid #F2F2F2;padding-left: 15px;width: 195px;font-weight: 700;font-size: 1em;color: black;opacity: 1;}
-.research-button{height: 49px;background-color: #0065FC;border: 1px solid #0065FC;padding-left: 15px;padding-right: 20px;border-top-right-radius:15px;border-bottom-right-radius:15px;font-weight: 700; font-size: 1em;color: white;}
+#city_form{height: 100%;border: none;background-color:white;border-top: 1px solid #F2F2F2;border-bottom: 1px solid #F2F2F2;padding-left: 15px;width: 195px;font-weight: 700;font-size: 1.125em;color: black;opacity: 1;}
+.research-button{height: 49px;background-color: #0065FC;border: 1px solid #0065FC;padding-left: 15px;padding-right: 20px;border-top-right-radius:15px;border-bottom-right-radius:15px;font-weight: 700; font-size: 1.125em;color: white;}
 
 .filtersList{display: flex;margin-bottom: 35px;}
-.filtersList p{margin-top: auto;margin-bottom: auto;font-weight: 700;font-size: 1em;}
-.filterTitle{margin-right: 25px}
-.filter{display: flex;flex-direction: row;height:50px;width: fit-content; padding-left: 19px;padding-right: 19px;align-content: center;border-radius: 25px; border:2px solid #D9D9D9;background-color: white; margin-right: 20px;}
-.filter:hover{background-color: #DEEBFF;}
+.filtersList p{margin-top: auto;margin-bottom: auto;font-weight: 700;font-size: 1.125em}
+.filtersList button p{font-size: 1.063em}
+.filterTitle{margin-right: 25px;}
+.filter{display: flex;flex-direction: row;height:50px;width: fit-content; padding-left: 19px;padding-right: 19px;align-content: center;border-radius: 25px; border:2px solid #D9D9D9;background-color: white; margin-right: 20px;transition: 0.25s}
+.filter:hover{background-color: #DEEBFF;transition: 0.25s}
 .filterContent{margin-top: auto;margin-bottom: auto;}
 .filtersList .fa-solid{margin-right: 15px;}
 
 .info{margin-bottom: 35px;display: flex;align-items: center;}
-.info .fa-solid {width: 24px;height:24px; border-radius: 12px;border:1px solid #D9D9D9;margin-right: 20px;text-align: center;margin-top: auto;margin-bottom: auto;}
+.info p{font-size: 1em}
+.pictoInfo{height:24px; width: 24px;border-radius: 12px;border:1px solid #D9D9D9;margin-right: 20px; display: flex;align-content: center;justify-content: center;}
+.info .fa-solid {margin-top: auto;margin-bottom: auto;}
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {display: flex; justify-content: space-between;}
@@ -63,6 +66,7 @@ h1{font-weight: 700;font-size: 1.2em;margin-bottom: 0.4em;}
 
 /****** Hebergements ***********/
 #hebergements {width: 65%;}
+
 
 /****** Populaires ***********/
 .populaires {width: 32%;}

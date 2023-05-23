@@ -100,11 +100,20 @@ h1{font-weight: 700;font-size: 1.375em;margin-bottom: 0.4em;}
 
 .activites{margin-bottom: 65px;padding-left: 30px;padding-right: 30px;}
 .activites h2{margin-bottom: 30px;}
-.activitesCards{display: flex;}
-.activites .card{width: 25%;margin: 0 10px;padding: 0;}
+.activitesCards{display: flex;justify-content: space-between;}
+.activites .card{width: calc(25% - 22.5px);;padding: 0;}
 .activites .card img{width: 100%;border-top-left-radius: 20px;border-top-right-radius: 20px;height: 380px;}
 .activites .card h3{margin-left: 19px;margin-top: 20px;margin-bottom: 20px;}
 
+/****** Activites ***********/
+
+footer{padding: 20px;background-color: var(--main-bg-color);padding-bottom: 5px;}
+.footer{display: flex;}
+footer ul{padding: 0;list-style-type: none;width: 33%;}
+footer li{margin-bottom: 15px;}
+footer li a{color: black;text-decoration: none;font-size: 100; font-weight: 400;transition: 0.25s;}
+footer li a:hover{color: #0065FC;transition: 0.25s;}
+.footerTitles p{font-weight: 700;font-size: 1.063em;}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */

@@ -7,7 +7,7 @@
 
 body {display: flex; justify-content: center;margin: 0;}
 
-.main-container {width: 100%; max-width: 1440px; padding-left: 12.5%;padding-right: 12.5%; box-sizing: border-box;}
+.main-container {width: 100%; max-width: 1440px; padding-left: 50px;padding-right: 50px; box-sizing: border-box;}
 
 .section-title {margin: 0; font-size: 22px;}
 
@@ -62,7 +62,7 @@ h1{font-weight: 700;font-size: 1.375em;margin-bottom: 0.4em;}
 .info .fa-solid {margin-top: auto;margin-bottom: auto;}
 
 /****** Hebergements And Populaires ***********/
-.hebergements-and-populaires {display: flex; justify-content: space-between;}
+.hebergements-and-populaires {display: flex; justify-content: space-between;margin-bottom: 65px;}
 
 .hebergements-and-populaires section {background-color: var(--main-bg-color); border-radius: 20px; padding: 30px; box-sizing: border-box;}
 
@@ -72,8 +72,8 @@ h1{font-weight: 700;font-size: 1.375em;margin-bottom: 0.4em;}
 
 /****** Hebergements ***********/
 #hebergements {width: 65%;}
-.hebergementsCards{display: flex;flex-wrap: wrap;justify-content: space-between;}
-.hebergementsCards .card {display: flex; margin-top: 33px;flex-direction: column;width: 30%;height: 207.25px;}
+.hebergementsCards{display: flex;flex-wrap: wrap;width:100%; justify-content: space-between;}
+.hebergementsCards .card {display: flex;flex-direction: column;width: calc(33% - 20px);height: 207.25px;margin-top: 33px;box-sizing: border-box;}
 .hebergementsCards img {height: 114px; border-top-left-radius: 20px; border-top-right-radius: 20px;width: 100%;object-fit:cover;}
 #hebergements .card-content{margin-left:15px;}
 #hebergements .card-rating{margin-bottom: 15px;}
@@ -96,6 +96,14 @@ h1{font-weight: 700;font-size: 1.375em;margin-bottom: 0.4em;}
 
 .populaires-cards .card-rating {margin-bottom: 5px;}
 
+/****** Activites ***********/
+
+.activites{margin-bottom: 65px;padding-left: 30px;padding-right: 30px;}
+.activites h2{margin-bottom: 30px;}
+.activitesCards{display: flex;}
+.activites .card{width: 25%;margin: 0 10px;padding: 0;}
+.activites .card img{width: 100%;border-top-left-radius: 20px;border-top-right-radius: 20px;height: 380px;}
+.activites .card h3{margin-left: 19px;margin-top: 20px;margin-bottom: 20px;}
 
 
 

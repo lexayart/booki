@@ -21,8 +21,10 @@ body {display: flex; justify-content: center;margin: 0;}
 
 .neutralStar {color: var(--main-bg-color)}
 
+
+
 /****** Header ***********/
-header{height: 75px;display: flex;flex-direction: row;justify-content: space-between;align-content: vertical;}
+header{height: 75px;display: flex;flex-direction: row;justify-content: space-between;}
 
 #logo{display: flex;align-content: center;height: 100%;justify-content: start;width: fit-content;}
 header img {height: 30%;margin:auto}
@@ -64,9 +66,18 @@ h1{font-weight: 700;font-size: 1.375em;margin-bottom: 0.4em;}
 
 .hebergements-and-populaires section {background-color: var(--main-bg-color); border-radius: 20px; padding: 30px; box-sizing: border-box;}
 
+.card h3{font-size: 1em;margin-top: 9px;}
+.card p{font-size: 0.875em;margin-top: 8px; margin-bottom: 8px;}
+.neutral-star {color: var(--main-bg-color);}
+
 /****** Hebergements ***********/
 #hebergements {width: 65%;}
-
+.hebergementsCards{display: flex;flex-wrap: wrap;justify-content: space-between;}
+.hebergementsCards .card {display: flex; margin-top: 33px;flex-direction: column;width: 30%;height: 207.25px;}
+.hebergementsCards img {height: 114px; border-top-left-radius: 20px; border-top-right-radius: 20px;width: 100%;object-fit:cover;}
+#hebergements .card-content{margin-left:15px;}
+#hebergements .card-rating{margin-bottom: 15px;}
+.afficherPlus{font-size: 1.063em;font-weight: 700;margin-top: 30px;color: black;text-decoration: none;}
 
 /****** Populaires ***********/
 .populaires {width: 32%;}

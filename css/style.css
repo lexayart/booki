@@ -114,7 +114,7 @@ nav li a:hover {
     border-top: 3px solid #0065FC
 }
 
-nav li a p {
+nav p {
     margin: auto;
 }
 
@@ -207,7 +207,7 @@ h1 {
     font-size: 1.125em
 }
 
-.filters-list .filter-content {
+.filter-content {
     font-size: 1.063em;
     font-weight: 700
 }
@@ -267,7 +267,7 @@ h1 {
     justify-content: center;
 }
 
-.info .fa-solid {
+.fa-info {
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -326,11 +326,11 @@ h1 {
     object-fit: cover;
 }
 
-#hebergements .card-content {
+.hebergement-cards .card-content {
     margin-left: 15px;
 }
 
-#hebergements .card-rating {
+.hebergement-cards .card-rating {
     margin-bottom: 15px;
 }
 
@@ -410,19 +410,19 @@ h1 {
     justify-content: space-between;
 }
 
-#activites .card {
+.activites-cards .card {
     width: calc(25% - 22.5px);
     padding: 0;
 }
 
-#activites .card img {
+.activites-cards .card img {
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     height: 380px;
 }
 
-#activites .card h3 {
+.activites-cards .card h3 {
     margin-left: 19px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -443,11 +443,11 @@ footer ul {
     width: 33%;
 }
 
-footer li {
+.footer-links {
     margin-bottom: 15px;
 }
 
-footer li a {
+.footer-links a {
     color: black;
     text-decoration: none;
     font-size: 1em;
@@ -455,14 +455,15 @@ footer li a {
     transition: 0.25s;
 }
 
-footer li a:hover {
+.footer-links a:hover {
     color: #0065FC;
     transition: 0.25s;
 }
 
-.footer-titles p {
+h3 {
     font-weight: 700;
     font-size: 1.063em;
+    margin-bottom: 15px;
 }
 
 
@@ -471,6 +472,13 @@ footer li a:hover {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (min-width:767.98px) and (max-width: 1024px) {
+
+
+    .filters-list p {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
 
     .hebergements-and-populaires {
         flex-direction: column;
@@ -502,7 +510,14 @@ footer li a:hover {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activites-cards .card img {
+        height: 141px;
+    }
+
 }
+
+
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
@@ -534,14 +549,19 @@ footer li a:hover {
         padding: 0;
     }
 
-    .nav-header li a {
+    .nav-header a {
         height: 100%;
         padding-bottom: 15px;
         border-bottom: 2px solid #F2F2F2;
     }
 
-    .nav-header li a:hover {
+    .nav-header a:hover {
         border-top: 3px solid transparent;
+        border-bottom: 2px solid #0065FC;
+    }
+
+    .nav-header .nav-hebergement {
+        color:#0065FC;
         border-bottom: 2px solid #0065FC;
     }
 
@@ -666,12 +686,12 @@ footer li a:hover {
         flex-direction: column;
     }
 
-    #activites .card {
+    .activites-cards .card {
         width: 100%;
         margin-top: 15px;
     }
 
-    #activites .card img {
+    .activites-cards .card img {
         height: 141px;
     }
 
